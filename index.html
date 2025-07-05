@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDZ School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #374151;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #111827;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .category, .price-box, .form-box {
+      background-color: #f3f4f6;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .price-box {
+      background-color: #e0f2fe;
+    }
+
+    .form-box {
+      background-color: #fff7ed;
+      margin-top: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #3b82f6;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+
+    a.social {
+      color: #3b82f6;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    GDZ school
+  </header>
+
+  <nav>
+    <a href="#lessons">Заняття</a>
+    <a href="#prices">Ціни</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#about">Про нас</a>
+    <a href="#contacts">Контакти</a>
+    <a href="#social">Соцмережі</a>
+    <a href="#register">Записатись</a>
+  </nav>
+
+  <section id="lessons">
+    <h2>Заняття</h2>
+    <div class="categories">
+      <div class="category">
+        <strong>4–7 років</strong><br>
+        Підготовка до школи, розвиток мовлення, англійська мова, математика в ігровій формі.
+      </div>
+      <div class="category">
+        <strong>8–11 років</strong><br>
+        Шкільна програма, адаптивні пояснення, англійська, українська, математика.
+      </div>
+      <div class="category">
+        <strong>12–17 років</strong><br>
+        Підготовка до НМТ/ЗНО, поглиблене вивчення англійської мови, української та математики.
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <h2>Ціни</h2>
+    <div class="price-box">
+      <p>Заняття адаптовані під індивідуальні потреби учня.</p>
+      <p><strong>Вартість 1 години — 150 грн</strong></p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Відгуки</h2>
+    <p>"Донька із задоволенням відвідує уроки! Видно результат вже після перших занять." – Ірина, мама учениці</p>
+    <p>"Доступно, сучасно і з любов’ю. Рекомендую!" – Олег, тато 9-класника</p>
+  </section>
+
+  <section id="about">
+    <h2>Про нас</h2>
+    <p>GDZ School — це проєкт амбітної молоді, учнів наукового ліцею «Політ», які хочуть зробити освіту зрозумілою, сучасною та доступною.</p>
+    <p>Ми поєднуємо традиційні освітні методи з креативними онлайн-інструментами, працюємо з любов’ю та повагою до кожного учня.</p>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакти</h2>
+    <p>Email: gdzschool@gmail.com</p>
+    <p>Телефон: +38 (097) 123 45 67</p>
+  </section>
+
+  <section id="social">
+    <h2>Соцмережі та блог</h2>
+    <p>Слідкуйте за нашими матеріалами, порадами та новинами в соцмережах:</p>
+    <p><a class="social" href="https://www.instagram.com/gdzschool" target="_blank">Instagram @gdzschool</a></p>
+    <p><a class="social" href="https://t.me/gdzschool" target="_blank">Telegram-канал</a></p>
+  </section>
+
+ <section id="register">
+  <h2>Записатись на заняття</h2>
+  <div class="form-box" id="form-section">
+    <form id="contact-form" action="https://formsubmit.co/levchenkomarina29062009@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Ім’я</label>
+      <input type="text" id="name" name="Ім'я" required>
+
+      <label for="age">Вік дитини</label>
+      <input type="number" id="age" name="Вік" required>
+
+      <label for="email">Email для зв'язку</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="message">Повідомлення або побажання</label>
+      <textarea id="message" name="Повідомлення" rows="4"></textarea>
+
+      <button type="submit">Надіслати заявку</button>
+    </form>
+  </div>
+
+  <div id="thank-you-message" style="display:none; text-align:center; padding:2rem;">
+    <h3>🎉 Дякуємо за вашу заявку!</h3>
+    <p>Ми зв’яжемося з вами найближчим часом.</p>
+    <a href="#top">
+      <button style="margin-top: 1rem; padding: 0.8rem 1.5rem; background-color: #3b82f6; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer;">
+        Повернутись на головну
+      </button>
+    </a>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const formSection = document.getElementById('form-section');
+  const thankYouMessage = document.getElementById('thank-you-message');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // блокуємо стандартну поведінку
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        formSection.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+        form.reset();
+      } else {
+        alert('Упс! Щось пішло не так. Спробуйте ще раз.');
+      }
+    }).catch(error => {
+      alert('Сталася помилка при надсиланні. Спробуйте пізніше.');
+    });
+  });
+</script>
+
+
+
+  <footer>
+    &copy; 2025 GDZ school — сучасна освіта, яка надихає
+  </footer>
+</body>
+</html>
